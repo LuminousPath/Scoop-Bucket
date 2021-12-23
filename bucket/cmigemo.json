@@ -1,0 +1,23 @@
+{
+    "bin": "cmigemo.exe",
+    "license": "MIT",
+    "Description": "C/Migemoライブラリを利用するソフトウェアは「ローマ字のまま日本語を(インクリメンタルに)検索する」機能を持つことが可能になります",
+    "homepage": "https://www.kaoriya.net/software/cmigemo",
+    "version": "1.2e",
+    "architecture": {
+        "64bit": {
+            "url": "https://files.kaoriya.net/goto/cmigemo_w64#/dl.7z",
+            "hash": "80adcf55848b46f8eb006ff4f73c5b840e7e322529d5d4e534be235ff0bb4ad0",
+            "extract_dir": "cmigemo-default-win64"
+        },
+        "32bit": {
+            "url": "https://files.kaoriya.net/goto/cmigemo_w32#/dl.7z",
+            "hash": "98e7f28e69f86bf8e44861121bd0472885e9e8162bf16ba1a92740412d86ea89",
+            "extract_dir": "cmigemo-default-win32"
+        }
+    },
+    "checkver": {
+        "url": "https://raw.githubusercontent.com/koron/cmigemo/master/VERSION",
+        "regex": "(.*)"
+    }
+}
