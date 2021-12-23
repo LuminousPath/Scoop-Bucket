@@ -3,7 +3,7 @@
     "description": "Comprehensive Hardware Analysis, Monitoring and Reporting for Windows and DOS",
     "homepage": "https://www.hwinfo.com",
     "license": "Freeware",
-    "url": "https://www.fosshub.com/HWiNFO-old.html?dwl=hwi_716.exe#/dl.exe",
+    "url": "https://www.fosshub.com/HWiNFO-old.html?dwl=hwi_716.exe",
     "hash": "95c8ab8b9f58a083a7d6bb75b16d4e14d9a7ec9655208cdce8aa1f7b8df42e51",
     "pre_install": [
         "'64' | ForEach-Object {",
@@ -11,7 +11,6 @@
         "}"
     ],
     "installer": {
-        "file": "dl.exe",
         "args": [
             "/VERYSILENT",
             "/DIR=\"$dir\"",
@@ -70,6 +69,6 @@
         "regex": "([\\d-.]+)"
     },
     "autoupdate": {
-        "url": "https://www.fosshub.com/HWiNFO-old.html?dwl=hwi_$majorVersion$minorVersion.exe#/dl.exe"
+        "url": "https://www.fosshub.com/HWiNFO-old.html?dwl=hwi_$majorVersion$minorVersion.exe"
     }
 }
