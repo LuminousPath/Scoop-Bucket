@@ -7,12 +7,10 @@
     "architecture": {
         "64bit": {
             "url": "https://sqlite.org/2021/sqlite-dll-win64-x64-3360000.zip",
-            "extract_dir": "sqlite-dll-win64-x64-3360000",
             "hash": "eb983c766560facb33ee9d0bd314b6ba2a63938394d77f3750a89c81a5337d37"
         },
         "32bit": {
             "url": "https://sqlite.org/2021/sqlite-dll-win32-x86-3360000.zip",
-            "extract_dir": "sqlite-dll-win32-x86-3360000",
             "hash": "bdcd90d909c708eff9a829c01b428c2b24fafc15f63deccd064c2bb12b0a49e3"
         }
     },
@@ -31,11 +29,9 @@
         "architecture": {
             "64bit": {
                 "url": "https://sqlite.org/2021/sqlite-dll-win64-x64-$matchClean.zip",
-                "extract_dir": "sqlite-dll-win64-x64-$matchClean"
             },
             "32bit": {
                 "url": "https://sqlite.org/2021/sqlite-dll-win32-x86-$matchClean.zip",
-                "extract_dir": "sqlite-dll-win32-x86-$matchClean"
             }
         }
     }
