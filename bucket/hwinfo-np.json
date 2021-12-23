@@ -3,7 +3,7 @@
     "description": "Comprehensive Hardware Analysis, Monitoring and Reporting for Windows and DOS",
     "homepage": "https://www.hwinfo.com",
     "license": "Freeware",
-    "url": "https://www.fosshub.com/HWiNFO-old.html?dwl=hwi_716.exe",
+    "url": "https://www.fosshub.com/HWiNFO.html/hwi_716.exe",
     "hash": "95c8ab8b9f58a083a7d6bb75b16d4e14d9a7ec9655208cdce8aa1f7b8df42e51",
     "pre_install": [
         "'64' | ForEach-Object {",
@@ -11,35 +11,23 @@
         "}"
     ],
     "installer": {
-        "args": [
-            "/VERYSILENT",
-            "/DIR=\"$dir\"",
-            "/SUPPRESSMSGBOXES",
-            "/NORESTART",
-            "/CLOSEAPPLICATIONS",
-            "/NORESTARTAPPLICATIONS"
-        ]
+        "script": "start -Wait $dir\\$fname -ArgumentList \"/VERYSILENT\", \"/DIR=$dir\", \"/SUPPRESSMSGBOXES\", \"/NORESTART\", \"/CLOSEAPPLICATIONS\", \"/NORESTARTAPPLICATIONS\"",
     },
     "uninstaller": {
-        "file": "unins000.exe",
-        "args": [
-            "/VERYSILENT",
-            "/SUPPRESSMSGBOXES",
-            "/NORESTART"
-        ]
+        "file": "unins000.exe"
     },
     "architecture": {
         "64bit": {
             "bin": [
                 "HWiNFO64.exe",
                 [
-                    "HWiNFO64.exe",
+                    "HWiNFO64.EXE",
                     "HWiNFO"
                 ]
             ],
             "shortcuts": [
                 [
-                    "HWiNFO64.exe",
+                    "HWiNFO64.EXE",
                     "HWiNFO64"
                 ]
             ]
@@ -48,13 +36,13 @@
             "bin": [
                 "HWiNFO32.exe",
                 [
-                    "HWiNFO32.exe",
+                    "HWiNFO32.EXE",
                     "HWiNFO"
                 ]
             ],
             "shortcuts": [
                 [
-                    "HWiNFO32.exe",
+                    "HWiNFO32.EXE",
                     "HWiNFO32"
                 ]
             ]
