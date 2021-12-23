@@ -1,10 +1,10 @@
 {
-    "version": "7.06-4500",
+    "version": "7.16-4650",
     "description": "Comprehensive Hardware Analysis, Monitoring and Reporting for Windows and DOS",
     "homepage": "https://www.hwinfo.com",
     "license": "Freeware",
-    "url": "https://www.hwinfo.com/files/hwi_706.exe#/dl.exe",
-    "hash": "7920e39ebb373101829ecda3f7a209a09552275d99c729d2f9c365c60b8dcb07",
+    "url": "https://www.fosshub.com/HWiNFO-old.html?dwl=hwi_716.exe",
+    "hash": "95c8ab8b9f58a083a7d6bb75b16d4e14d9a7ec9655208cdce8aa1f7b8df42e51",
     "pre_install": [
         "'64' | ForEach-Object {",
         "    if (-not (Test-Path \"$persist_dir\\HWiNFO$_.INI\")) { Set-Content \"$dir\\HWiNFO$_.INI\" '[Settings]', 'AutoUpdate=0' -Encoding Ascii}",
@@ -70,6 +70,6 @@
         "regex": "([\\d-.]+)"
     },
     "autoupdate": {
-        "url": "https://www.hwinfo.com/files/hwi_$majorVersion$minorVersion.exe#/dl.exe"
+        "url": "https://www.fosshub.com/HWiNFO-old.html?dwl=hwi_$majorVersion$minorVersion.exe"
     }
 }
