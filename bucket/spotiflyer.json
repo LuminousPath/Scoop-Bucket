@@ -1,0 +1,20 @@
+{
+    "homepage": "https://github.com/Shabinder/SpotiFlyer/",
+    "description": "Kotlin Multiplatform Music Downloader",
+    "license": "GPL-3.0-only",
+    "version": "3.6.1",
+    "url": "https://github.com/Shabinder/SpotiFlyer/releases/download/v3.6.1/SpotiFlyer-3.6.1.msi",
+    "hash": "c0bb29c63e87492263fb1c1ccc876b556977f72e57d61f215505bc9acd3c4e12",
+    "bin": "SpotiFlyer.exe",
+    "extract_dir": "SpotiFlyer",
+    "shortcuts": [
+        [
+            "SpotiFlyer.exe",
+            "SpotiFlyer"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/Shabinder/SpotiFlyer/releases/download/v$version/SpotiFlyer-$version.msi"
+    }
+}
