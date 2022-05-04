@@ -1,0 +1,13 @@
+{
+    "homepage": "https://github.com/Kostassoid/lethe",
+    "description": "Secure drive wipe ",
+    "license": "Apache-2.0",
+    "version": "0.6.1",
+    "url": "https://github.com/Kostassoid/lethe/releases/download/v0.6.1/lethe-v0.6.1-x86_64-pc-windows-gnu.zip",
+    "hash": "423196b4796284f38e47d7a0b59a1cb567ddfa0458f1e1abb0abf5832bf51384",
+    "bin": "lethe.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/Kostassoid/lethe/releases/download/v$version/lethe-v$version-x86_64-pc-windows-gnu.zip"
+    }
+}
