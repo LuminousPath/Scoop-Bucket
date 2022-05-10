@@ -1,0 +1,19 @@
+{
+    "homepage": "https://u-tools.com/msls",
+    "description": "msls - GNU ls for Microsoft Windows",
+    "license": "GPL-2.0",
+    "version": "4.8.349",
+    "url": "https://u-tools.com/files/msls349.exe#/msls349.zip",
+    "hash": "ae2e4cd4eff41b64c241fa45137d979d8a9e4197332c442a650bbac47bf00fc5",
+    "bin": [
+        ["ls.exe", "msls"],
+        ["grep.exe", "msgrep"]
+    ],
+    "checkver": {
+        "url": "https://u-tools.com/download_prod.asp?download_id=600&Agree=1",
+        "regex": "Version: ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://u-tools.com/files/msls$patchVersion.exe#/msls349.zip"
+    }
+}
