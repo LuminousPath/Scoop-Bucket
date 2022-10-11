@@ -1,0 +1,43 @@
+{
+    "homepage": "https://github.com/qrrk/Catapult",
+    "description": "A cross-platform launcher for Cataclysm: DDA and BN",
+    "license": "MIT",
+    "version": "22.08a",
+    "url": "https://github.com/qrrk/Catapult/releases/download/22.08a/catapult-win-x64-22.08a.exe",
+    "hash": "d8c4107e089c10114c420aef86d138b88c02698bb9f2628d1af6548d0af2b646",
+    "bin": [
+        [
+            "catapult-win-x64-22.08a.exe",
+            "cdda-catapult"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "catapult-win-x64-22.08a.exe",
+            "Catapult"
+        ]
+    ],
+    "persist": [
+        "catapult_settings.json",
+        "dda"
+    ],
+    "checkver": {
+        "url": "https://github.com/qrrk/Catapult/releases/latest",
+        "regex": "/releases/tag/(?:v|V)?([\\d.]+[a-fA-F0-9])"
+    },
+    "autoupdate": {
+        "url": "https://github.com/qrrk/Catapult/releases/download/$version/catapult-win-x64-$version.exe",
+        "bin": [
+            [
+                "catapult-win-x64-$version.exe",
+                "cdda-catapult"
+            ]
+        ],
+        "shortcuts": [
+            [
+                "catapult-win-x64-$version.exe",
+                "Catapult"
+            ]
+        ]
+    }
+}
